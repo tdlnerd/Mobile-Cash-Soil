@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/RobotControls.js">
+    <Files>
+      <File FileName="Assets/Scripts/RobotControls.js" Line="15" Column="32" />
+      <File FileName="Assets/Scripts/DestroyBlockAI.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Spawn Ore.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Damage.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Rock.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
