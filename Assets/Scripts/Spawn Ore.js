@@ -56,6 +56,23 @@ RoundChecker = Man.GetComponent(Var);
 	CancelInvoke("GemL3");
 	CancelInvoke("EnemyL3");
 	}
+	if (RoundChecker.Round > 10) {
+	InvokeRepeating("GemL1",0,(0.05));
+	InvokeRepeating("EnemyL1",0, (0.4));
+	yield WaitForSeconds(1);
+	CancelInvoke("GemL1");
+	CancelInvoke("EnemyL1");
+	InvokeRepeating("GemL2",0, (0.05));
+	InvokeRepeating("EnemyL2",0,(0.1));
+	yield WaitForSeconds(0.5);
+	CancelInvoke("GemL2");
+	CancelInvoke("EnemyL2");
+	InvokeRepeating("GemL3",0, (0.025));
+	InvokeRepeating("EnemyL3",0,(0.2));
+	yield WaitForSeconds(0.25);
+	CancelInvoke("GemL3");
+	CancelInvoke("EnemyL3");
+	}
 
 }
 

@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Var.js">
+    <Files>
+      <File FileName="Assets/Scripts/Var.js" Line="50" Column="45" />
+      <File FileName="Assets/Scripts/RobotControls.js" Line="13" Column="56" />
+      <File FileName="Assets/TButtons.js" Line="2" Column="8" />
+      <File FileName="Assets/JoystickCheck.js" Line="13" Column="14" />
+      <File FileName="Assets/Scripts/Spawn Ore.js" Line="71" Column="36" />
+      <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ArmControl.js" Line="10" Column="9" />
+      <File FileName="Assets/Scripts/LevelManager.js" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/Damage.js" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/LoadFix.js" Line="10" Column="1" />
+      <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs" Line="38" Column="1" />
+      <File FileName="Assets/Standard Assets/2D/Scripts/Camera2DFollow.cs" Line="26" Column="41" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

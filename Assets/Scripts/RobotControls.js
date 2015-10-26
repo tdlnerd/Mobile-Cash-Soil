@@ -4,48 +4,47 @@ var rb: Rigidbody2D;
  var turnSpeed : float = 100; // speed player turns
  var thrust: float;
  var jump = true;
- function Update () 
- {
- 	 for (var touch : Touch in Input.touches) {
-        if (touch.phase == TouchPhase.Began) {
-            // Construct a ray from the current touch coordinates
-            var ray = Camera.main.ScreenPointToRay (touch.position);
-            }
+ var tpos : Vector2;
+var Left = false;
+var Right = false;
+var holder = false;
+var JS : JoystickCheck;
+function Start () {
+JS = GameObject.Find("JS").GetComponent(JoystickCheck);
+}
+ function Update () {
      MoveForward(); // Player Movement
-     Debug.Log(touch.position.x);
- }
+     Debug.Log(tpos);
  }
  
  function MoveForward()
  {
- 	if(Input.GetKeyDown("up") && jump == true)//Press up arrow key to move forward on the Y AXIS
-     {
-      Jump();
-     }
-     if (null) //Press up arrow key to move forward on the Y AXIS
-     {
-         transform.Translate(Vector2.right * Time.deltaTime * playerSpeed);
-         transform.rotation = Quaternion.Euler(0,0,-90);
-     }
-     if(Input.GetKey("left"))//Press up arrow key to move forward on the Y AXIS
+     if(JS.Difx > 20)//Press up arrow key to move forward on the Y AXIS
      {
          transform.Translate(Vector2.right * Time.deltaTime * playerSpeed);
          transform.rotation = Quaternion.Euler(180,0,180);
-     }
-     if(Input.GetKey("right"))//Press up arrow key to move forward on the Y AXIS
+         }
+     if(JS.Difx < -20)//Press up arrow key to move forward on the Y AXIS
      {
          transform.Translate(Vector2.right * Time.deltaTime * playerSpeed);
          transform.rotation = Quaternion.Euler(0,0,0);
      }
- 
+     if(JS.Dify > 20) {
+     transform.Translate(Vector2.right * Time.deltaTime * playerSpeed);
+         transform.rotation = Quaternion.Euler(0,0,-90);
+      }
  }
- 
  function Jump() {
- jump = false;
- rb.AddForce(transform.up * thrust);
-         transform.rotation = Quaternion.Euler(180,0,180);
+ 	if (jump == true) {
+ 	jump = false;
+ 	rb.AddForce(transform.up * thrust);
+  }
 }
 
+function Down () {
+transform.Translate(Vector2.right * Time.deltaTime * playerSpeed);
+         transform.rotation = Quaternion.Euler(0,0,-90);
+}
 
  
  
