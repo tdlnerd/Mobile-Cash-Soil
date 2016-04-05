@@ -34,11 +34,8 @@ RoundBox.text = Round.ToString();
 DamageBar.value = Damage;
 LiveBox.text = Live.ToString();
 	if (Live < 1 &&  NoMore == false) {	
-	Application.LoadLevel("GameOver");
-	if (Score > highscore) {
-	PlayerPrefs.SetInt("highscore", Score);
-		}
 	Destroy(gameObject);
+		Application.LoadLevel("GameOver");
 	}
 	}
 
